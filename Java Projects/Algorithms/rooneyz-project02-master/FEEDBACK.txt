@@ -1,0 +1,16 @@
+FEEDBACK:
+
+Nice message to user in case of large playlist time requested :)
+
+
++0.5 Excellent description of the purpose of each test case in your RUN and README file.
+
+
+
+Accepted 02/14 Extra Credit Opportunity:
++2 implementation of findSubset() for SongEntry type.
+
++2 clearly defined test cases for findSubset() method.   
+
+-Bita.
+

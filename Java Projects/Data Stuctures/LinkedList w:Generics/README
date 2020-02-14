@@ -1,0 +1,54 @@
+rooneyz-project07:
+
+Brief description of submitted files:
+
+src/cellularData/Country.java
+    - One object of class Country stores represents a single country. Each country has a string name, and an 
+      LinkedList<SubscriptionYear> that holds all the years and cellular data for each year of that country
+      
+src/cellularData/LinkedList<T>.java
+    - One object of class holds and manages a linked list of generic object type <T>
+    - Implements Iterable so that it can be iterated
+    - Contains Node<T> reference "head" that points to the first node in the linked list
+    - Contains int listLength that keeps track of the size of the linked list
+    - Has private helper class ListIterator that implements Iterator<T>. This class defines how to iterate 
+      LinkedList
+    
+src/cellularData/Node<T>.java
+    - This class creates Node<T> objects that are used in by LinkedList
+    - Contains generic object 'data' of type <T>
+    - Contains Node<T> reference "next" that points to another Node<T> object 
+    
+src/cellularData/CSVReader.java
+    - this class will take a CSV file as a parameter then separate and store the information of
+      the file. It then has methods to return a list of countries in the data, the 
+      table of data, the years of the data, and the total years of data.
+    
+src/cellularData/SubscriptionYear.java
+    - One object of this class represents a single subscription year with 
+      the year and number of subscriptions for that year.
+
+src/cellularData/TestGenericsList.java
+	- Designed to test LinkedList<T> and Node<T> after they have been converted to handle generic objects. As well as
+	  the modifications made to Country Class to handle a LinkedList of SubscriptionYear objects instead of an array.
+	- Creates a random list of countries and tests methods of LinkedList, Country, Node, and SubscriptionYear classes
+	
+src/cellularData/PersonalTest.java 
+	- Designed to test LinkedList<T> after it was converted to generic by created 3 new country's, adding them to list,
+	  and printing
+	  
+resources/cellular.csv
+    - A CSV (Comma Separated Value) file.
+    - Contains a list of countries and their cellular subscriptions data for a range of years
+    
+resources/RUN.txt
+    - console output of TestCountryList.java
+
+README.txt
+	- description of submitted files
+	
+Ideas How to Improve:
+- better error description for user for Country getNumSubscriptionsForPeriod method if startYear>endYear
+- keep subscription list organized by year
+- check user input to be valid before using
+- Descriptions need to be fully updated for switch to generics

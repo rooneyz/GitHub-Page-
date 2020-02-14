@@ -1,0 +1,21 @@
+FEEDBACK:
+
+Well done!
+
+
+Good use of expressions when splitting the input in your CSVReader class.
+
+
+-0 Why are the attributes of CSVReader such as "countryNames" and "yearLabels" package visible (i.e protected)?
+   You have getter methods for them so they can be accessed from outside.
+   Unless you can justify, all attributes must be private.
+	int[] yearLabels;
+   Next time minus one for each class.
+   
+   
+-0 For future, place README.txt at top-level directory under project folder. 
+   See feedback from previous project.
+ 	Next time minus one for this.
+
+-Bita.
+

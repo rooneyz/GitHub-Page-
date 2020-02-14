@@ -1,0 +1,57 @@
+Tasks for Project 9 and Team [4]
+=====================================
+
+Proposal
+
+Part A
+---------
+
+	- task 1: Make point labels only viewable when mouse hovers over the point. This will be done by altering class 
+          GraphView. We will have to implement mouseListener, then write a method to get the desired action 
+          when the mouse hovers over a point. We will add a label to the graph to let the user know to hover over
+          a point to get specific data info.
+	- [Zach Rooney will be responsible for this]
+	-  DUE : 12/8/2016
+	- [ACTUAL COMPLETION DATE TO github.com repo: 12/6/16]
+
+
+	- task 2: Make a search function. This will be a new class (name TBD) that extends JPanel (Or JButton). The search button will
+	  be added to the main frame. When clicked it will have a pop up window that allows the user to search for subscription
+	  data for a specific country and for a specific range of years. This will use class Country's getNumSubscriptionsForPeriod
+	  method and will also implement MouseListener. The user will know about this feature because the search option will be 
+	  displayed on the frame. 
+	- [Tim Hsu will be responsible for this]
+	-  DUE : 12/8/2016
+	- [ACTUAL COMPLETION DATE TO github.com repo: 12/7/16 ]
+
+	
+How It Actually Happened
+
+	- Zach was able to implement mouse listener in graph view and hide all the data points until clicked (changed 
+	  from hover). Originally, it was implemented with a drawString in the paintComponent() but once clicked the
+	  labels couldn't be removed (easily). Upon meeting on Tuesday, Tim was able to help converting data points into
+	  labels which made the removal easier and only allowed one datapoint to  show at a time. Also, in the Tuesday 
+	  meeting a bug was detected with the graph ticks being off, Zach was able to fix so it aligned directly with the 
+	  points. Tim was able to change the layout structure to add the new bottom panel. Tuesday night Tim was able to 
+	  write the code to display the pop up window without actual data.
+	 	 Wednesday we meet again. Zach was able to get the data needed for the pop up window by writing getCountry() in
+	  LinkedList Class and then correctly formating data. Tim was then able to use the data and add it to the pop up 
+	  window search function. Zach also did some minor formating (changing graph labels and positioning) and 
+	  Tim some error handling to prevent doubles of countries. Wednesday night Tim finished some error handling by 
+	  fixing the horizontal scroll panel on Legend Class. He also "cleaned" our code but removing old and extra code.
+	  We are still having some issue with github. Most of the time it works, sometimes it is required to remove project
+	  and re clone. We would verbally say when we did a commit or text.
+	  
+Extra Credit
+
+	- There were several discussions on format and appearance. We decided to keep title in one line instead of two,
+	  having a beginning (default) label next to get subscriptions button, whether to use mouse click or hover,
+	  and how big to make the borders are some examples.We also had several discussions on how to add JLabels. 
+	  In particular, how to use the MouseLisenter. We originally tried to add the JLabel in the MousListner click 
+	  method. We found that this didn't work so we had it make changes in the MouseLisenter and add the JLabel in the
+	  paintComponent. Lastly, there were several discussions on layout and which layout method to use.
+	  
+	  
+	   
+
+
