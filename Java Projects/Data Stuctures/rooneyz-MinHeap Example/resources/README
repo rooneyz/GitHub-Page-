@@ -1,7 +1,0 @@
-CSVReader - Constructs a CSV object. A CSV file sent to the constructor as a parameter. 
-It then sorts through the file separating and saving the data into separate arrays and variables. 
-The arrays and variables are then used to return specific data to the user with several "get" methods.
-
-TestCSVReader - Code designed to test and error check class CSVReader
-
-RUN - a sample output from TestCSVReader
